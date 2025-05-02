@@ -1,0 +1,516 @@
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        
+
+
+\moderncvstyle{banking}                            
+
+\moderncvcolor{black}      
+\newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
+\newcommand*{\github}[1]{\def\@github{#1}}
+
+\newcommand*{\externallink}[2][]{%
+  \ifthenelse{\equal{#1}{}}%
+    {\href{#2}{#2}}%
+    {\href{#2}{#1}}}
+\newcommand\githublogo{\raisebox{-1pt}{\includegraphics[height=9pt]{github}}\ }
+\newcommand\linkedinlogo{\raisebox{-1pt}{\includegraphics[height=9pt]{linkedin}}\ }
+
+
+\nopagenumbers{}                                  
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+
+
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+
+
+
+\usepackage{import}
+\usepackage[parfill]{parskip} % Remove paragraph indentation
+\usepackage{array} 
+\usepackage{ifthen}
+% personal data
+\name{Durbadal}{Ghosh}
+
+\phone[mobile]{+18503288379}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+91 7001846288}               \linkedin{www.linkedin.com/in/durbadal-ghosh-1a7a27143}     
+\email{reevu7@gmail.com}                              
+\section{
+
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\cvref}[3][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \ifx&#3
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#3%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+  
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+
+
+\newcommand{\vb}[1]{\textcolor{red}{\textsf{#1}}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+\section{Websites}
+\begin{itemize}
+    \item \textbf{Linkedin:} www.linkedin.com/in/durbadal-ghosh-1a7a27143
+    \item \textbf{Github:} https://github.com/Durbadal0
+\end{itemize}
+\section{Education}
+\textbf{Florida State University} \hfill {\em \textbf{Fall 2020 - Present} }\\
+PhD Biostatistics (GPA-3.9 out of 4)\\
+\textbf{Indian Statistical Institute} \hfill {\em \textbf{Fall 2018 - Fall-2020} }\\
+M.Stat. (Master of Statistics) \hfill  \\
+$\bullet$ Selected courses: \textit{Martingale Theory, Measure Theoretic Probability, Advanced Functional Analysis, Weak Convergence and Empirical Processes, Brownian Motion and Diffusions, General Topology, Theory of Random Graphs.} \\ \\
+\textbf{Indian Statistical Institute} \hfill {\em \textbf{Fall 2014 - Fall 2018}}
+\\ B.Stat. (Bachelor of Statistics) \hfill   \\
+$\bullet $ Capstone Project : \textit{`Public perception on Inflation'} under supervision of 
+\textit{Prof. Bimal K. Roy} \\ and \textit{Prof. Debasis Sengupta.}\\
+$\bullet $ Selected courses : \textit{Number Theory, Analysis, Discrete Mathematics, Design \& Analysis of Algorithms}\\~\\
+\textbf{West Bengal Board Of Secondary Education} \hfill {\em \textbf{2014}} 
+\\ West Bengal Council of Higher Secondary Exam \hfill  
+\\~\\
+\textbf{West Bengal Board Of Secondary Education} \hfill {\em \textbf{2012}} 
+\\ Madhyamik Pariksha \hfill
+
+
+  
+\section{Technical Skills}
+\textbf{Programming Languages :} \quad \qquad  SAS, R \& Rcpp, Winbugs, Stan, nimble, Julia,  Python,C \& C++.
+ \\  \textbf{Software \& Tools :} $\quad \qquad \quad \qquad \;$ \LaTeX, R Markdown, Git/Github, Excel. 
+
+\section{Under Review Papers}
+\begin{itemize}
+    \item ``Analysis of spatially clustered survival data with unobserved covariates using SBART" by Durbadal Ghosh, Debajyoti Sinha, Antonio Linero, George Rust (2024), at Biometrics.
+    
+\end{itemize}
+ \section{Registired Packages}
+ \begin{itemize}
+     \item \textbf{BigRiverQTL.jl} package in Julia. It was registered in August 2024. \\(https://github.com/senresearch/BigRiverQTL.jl/tree/main)\\
+     A Statistical Toolbox for QTL Analysis: BigRiverQTL.jl is a package that makes it easier to perform quantitative trait locus (QTL) analysis in Julia. It consists of three components that streamline the QTL analysis workflow: preprocessing, genome scans, and visualization.
+ \end{itemize}
+ \section{Areas Of Expertise}
+ 
+\begin{itemize}
+\item{Bayesian Statistics}
+\item{Biostatistics}
+\item{Data Science}
+\item{Causal inference}
+\item{Machine Learning \& Deep Learning}
+\item{ Design of experiments}
+\item {Monte Carlo methods}
+\item {Mixed effect models}
+
+\item{Probability Theory \& Measure Theory}
+\item{Topology}
+\item{Functional Analysis}
+\item{ Design of Algorithms}
+
+
+\item{Topology}
+\item{Combinatorics \& Cryptology}
+
+\end{itemize}
+\section{Academic Awards and Achievements}
+\begin{itemize}
+\item Winner of the prestigious Health Policy Statistics Section Student Paper Competition, 2025, by the American Statistical Association. Awarded cash, certificate, etc.
+\item RL Anderson Graduate Student Poster presentation award by SRCOS, 2023. (Ranked 2nd)
+\item Boyd Harshburger Travel award for presentation by SRCOS, 2023
+\item Outstanding Research Presentation Award of the Graduate Student Research Conference 2023 at GSN, NISS (Ranked 2nd)
+\item Nominated for best Student researcher award (Korwar award, 2023)  at FSU, statistics. (Only five students were nominated.)
+\item Ranked first in the FSU Data Science Competition held in Kaggle, 2022.
+\item Ranked fifth in the FSU Data Science Competition held in Kaggle, 2023.
+\item Travel Award for Paper Presentation at the Florida chapter of ASA, 2023.
+
+\item Travel award from COGS, FSU for poster presentation at SRCOS, Summer Research Conference, 2023.
+
+\item Got selected in the top 30 of the Chennai Mathematical Institute Entrance Exam 2014 amongst 10,000 candidates all over India.
+
+\item  Jagadis Bose Senior National Science Talent Search Scholar, 2014-2020.
+\item Qualified in different competitive exams in India.
+
+\end{itemize}
+\section{Work Experience}
+\begin{itemize}
+\item Data Science Intern in biostatistics at the University of Tennessee Health Science Center. (June, 2024 - August, 2024)
+\item Intern as a biostatistics researcher at Sanofi. (May, 2023-August, 2023)
+\item Statistical consulting for a private group, ESA South Inc, FL, a general contractor in Pensacola that provides emergency services to the federal government from May 2022 to August 2022.
+\item Data Science Intern at MBB LABS May 2019-August 2019. Building algorithms to detect frauds in real-time.
+\item Research Assistant at College of Medicine, FSU from May 2021 - Dec 2022. Our team of 5 people is headed by Dr. George Rust(M.D, MPH), Director of the Center for Medicine and Public Health. This group aims to discover the most important factors that contribute to racial disparity among breast cancer patients in Florida. 
+\item Member(as a Biostatistician) of Global Health
+Collaboration Project(under the World Health Organization) is a collaboration between universities in the USA with people from various departments, such as doctors, engineering, biostatistics, etc. Ongoing from August, 2021.
+\item Research Assistant under Dr. Sinha, professor of statistics, FSU from Dec, 2020-April, 2021
+\item Teaching Assistant in Summer 2022 and Spring 2023.
+
+
+
+\end{itemize}
+
+\section{Solo Teaching Experience}
+\begin{itemize}
+\item Solo Teacher for  Introduction to Applied Statistics (STA2122), Spring 2022.
+\item Solo Teacher for  Statistics through example (STA1013), Summer 2022.
+\item Solo Teacher for Statistics for Biology (STA2171), Spring 2023.
+\item Solo Teacher for  Introduction to Applied Statistics (STA2122), Summer 2023.
+\item Solo Teacher for Fundamental Business Statistics (STA2023), Fall 2023.
+\item Solo Teacher for  Introduction to Applied Statistics (STA2122), Spring 2024.
+
+
+\end{itemize}
+\section{Packages developed by me}
+\begin{itemize}
+    \item {\customcvproject{BigRiverQTL.jl }{}
+     {\textbf{Description :}BigRiverQTL.jl is a package that makes it easier to perform quantitative trait locus (QTL) analysis in Julia. It consists of three components streamline the QTL analysis workflow: preprocessing, genome scans, and visualization.  }
+}
+  %  \item {\customcvproject{FlxQTL.jl}{}
+  %   {\textbf{Description :}FlxQTL.jl is a package for a multivariate linear mixed model-based QTL analysis tool that supports incorporating information from trait covariates such as time or different environments. The package supports the computation of one-dimensional and two-dimensional multivariate genome scans, visualization of genome scans, support for LOCO (leave-one-chromosome-out), computation of kinship matrices, and support for distributed computing.  }
+}
+\end{itemize}
+
+\section{Paper and Poster Presentation}
+\begin{itemize}
+\item Joint Statistical Meeting, 2024
+\item Theory and Foundations of Statistics in the Era of Big Data Conference, 2024 (poster)
+\item ASA Florida Chapter, 2024
+\item ASA Florida Chapter, 2023
+\item NISS-GSN 3rd Annual Graduate Student Research Conference, 2023
+\item SRCOS, summer research conference, 2023 (poster).
+\item Yongyuan and Anna Li Presentations, FSU, 2023
+
+\end{itemize}
+
+\section{Ongoing Papers}
+\begin{itemize}
+\item {\customcvproject{ Modeling of clustered censored survival data with spatial correlated random 
+effects using SBART \\ (\textbf{under review at Biometrics})}{}
+     {\textbf{Description :} We present a Bayesian survival model to discover important factors contributing to racial disparity among patients in Florida with breast cancers. We propose a general robust nonparametric model for clustered censored survival data with spatial correlation under a Bayesian ensemble learning paradigm called Soft Bayesian Additive Regression Trees or SBART (Linero and Yang, 2018)   }
+}
+
+\item {\customcvproject{ Estimating Causal Effects in Spatially Clustered Survival Data Using BART \\ (ongoing) }{}
+     {\textbf{Description}: We propose a novel Bayesian approach to estimate causal effects in spatially clustered survival data. Using Monotone Bayesian Additive Regression Trees (mBART), we introduce a flexible framework that accommodates unobserved cluster-level covariates and spatial associations through a Conditional Auto-Regressive (CAR) model. Additionally, we incorporate a propensity score model to estimate treatment effects in observational studies.
+     }
+
+
+\end{itemize}
+\section{Academic Projects}
+
+
+\begin{itemize}
+       
+\item {\customcvproject{ Bayesian extension of ``Flexible multivariate linear mixed models for structured multiple traits " }{}
+     {\textbf{Description}: I worked on extending the paper ``Flexible multivariate linear mixed models for structured multiple traits " using Bayesian approaches}
+     }
+
+\item {\customcvproject{ Bayesian Tensor regression on a big skewed data with mixed response }{}
+     {\textbf{Description}: We analyze dental data with a mixed tensor response. The main challenges are monotonous missingness, large and longitudinal data, with each patient being recorded at irregular time points. We are developing a method/model that can tackle these challenges.}
+     }
+
+
+    \item {\customcvproject{Fraud Detection in Highly Imbalanced Big Data
+    %Reconstruction Of 3D Surface \vb{COMPLETE the title}
+    }{}
+{\small Bank Of Malaysia}
+{\textbf{Description : } We provided a solution to a classification problem where we were tasked with Detecting Fraud in highly imbalanced data where the number of zeroes was much higher than ones, leading to simple classification algorithms predicting zero almost always and giving very low precision on test data, thus, failing to serve the task. We checked the linear dependency of predictors, which helped us argue why statistical techniques based on linear dependence wouldn't be sensible. We finally came up with a series of methods that can be used to classify the data with high accuracy. We showed that t-SNE's results on the data were reliable, and our algorithm consisted of taking a Nadaraya-Watson estimate based on the distance with fixed k nearest neighboring data points. We used the k-fold cross-validation and compared the performance with that of SMOTE.   }
+}
+   \item {\customcvproject{Implementation of Projection Pursuit}{}
+{\small supervised by Prof. Soumendu Sundar Mukherjee}
+{\textbf{Description : } We implemented Projection Pursuit on three types of problems - Regression, Density Estimation, and Exploratory Data Analysis. We projected our data in one dimension, took the density of the projection, optimized Friedman's index using Gradient Descent, updated the model, and iterated it until convergence.  %\vb{Write an abstract, I will re-do it}.
+}}
+\item {\customcvproject{Public Perception on Inflation in our Area}{}
+{\small supervised by Prof. Debasis Sengupta \& Prof. Bimal K. Roy}
+{\textbf{Description : } We devised a tool to measure inflation in our area and found out the most influencing factor on wholesale price index \& most influencing factor that hinders the customer's purchasing power. We prepared questionnaires and surveyed a stratified sample. We defined an index, named the customer price index, that depends on the time point. We derived quantitative indices that explain the perception of inflation: Jack Knife estimates, ratio estimates, and minimizer estimates. Then, we did a reliability analysis of the data. We used various plots to explain the behavior of the data and why certain types of analysis will be suitable. 
+
+}
+}
+
+\item \customcvproject{Estimation of the Mean of a Multivariate Normal Distribution-A Review}{}
+{\small supervised by Prof.Avik Ghosh }
+{\textbf{Description : } Estimation of the means of independent standard random variables using the squared error loss function is considered. An unbiased estimate of risk is obtained for an arbitrary class of estimates. A significant type of minimax estimate is found when the dimension is at least 3. Lastly, approximate confidence sets for the mean vector centered on an arbitrary estimate are given. 
+
+}
+}
+\item {\customcvproject{Analysis of Air Pollution Data-Big Data Analysis}{}
+{\small supervised by Prof.Debasis Sengupta }
+{\textbf{Description : } Handling highly Big Data. Different analyses like Anova, Prediction of different variables, Explaining behaviors of different variables, Analysing interesting features of the data using various Multivariate Techniques
+}
+}
+\item {\customcvproject{Radio Colouring of Graph Theory}{}
+{\small supervised by Prof. Sandip Das}
+{\textbf{Description : } We tried to find a bound for a minimum number of colors required to radio color some special types of infinite graphs. We found a strong upper bound that we conjectured also to be the lower bound, hence claiming that the upper bound we got might be the actual chromatic number in any such graph.
+
+}
+}
+
+\end{itemize}
+
+
+
+
+
+  
+\section{Academic Seminars and Talks}
+My Presentation :
+\begin{itemize}
+\item Snowball Sampling, by Leo A. Goodman  (Using Beamer)
+\item Transfinite Numbers: What is Infinity ?, by S.M. Srivastava (Using Beamer)
+\item A theorem in continued Fraction (ISI)
+\item Air Pollution Data Analysis (ISI)
+\item Projection Pursuit (ISI)
+\item Estimation of the mean of a multivariate normal distribution (ISI)
+\item How should a Modern National System of Official Statistics Look
+\end{itemize}
+\\
+Seminars/ Talks 
+\begin{itemize}
+    \item Various Developments and History of Space Science (At ISRO Satellite Centre
+    \item Attend a talk at National Aeronautics Limited
+    \item Attended Talk at Indian Institute of Astrophysics
+    \item Role of CREST at CREST, Hosekote
+    \item Two-day Seminar At Indian Institute of Science which includes \begin{itemize}
+        \item  Got to see  the Super Computer and  learn its uses in Research
+        \item Discussed interesting experiments in Physics
+        \item Advances in Molecular Biology
+        \item Gas Turbine Research 
+        
+    \end{itemize}
+    \item A Seminar in JBNSTS: \begin{itemize}
+        \item Lecture by Prof. Amitava Raychaudhuri, Department of Physics, Calcutta University
+        \item Lecture by Dr. Dipasri Bhattacharya, Prof. &amp; HOD, Department of anesthesiology, Critical Care &a Pain, R.G. Kar Medical College
+    \end{itemize}
+    
+    \item Attended a one-day seminar at the National Institute of Mental Health & Neuro Sciences
+    \item Talk at Hindustan Aeronautics Limited
+    \item One-day seminar at Jawaharlal N Center for Advanced Scientific Research
+    \item Various talks on brain research and  Neurosciences at the National Center for Biological Sciences
+    \item One-day seminar in Mathematics and Research by various professors all over India
+    \item Curveture Entropy and Geometry by Cedric Villani At ISI
+    \item Making the Black Box Effective: What Statistics Can Offer by Emmanuel J Candes (Stanford University) at ISI
+    \item Future of Research in Mathematical Science at ISI
+    \begin{itemize}
+        \item Extra-curricular Seminar -\begin{itemize}
+            \item Interaction with Shri Arindam Ganguly, Singer and Actor
+            \item Interaction with Shri Gautam Halder, Theatre Actor
+            \item Interaction with Shri Barun Chanda, Actor and Author
+        \end{itemize}
+    \end{itemize}
+    
+    
+\end{itemize}
+In addition to the seminars, I met various scientists from all over India and on board and visited multiple laboratories in different prestigious institutes in other disciplines. 
+
+\section{Leadership Experience}
+\begin{itemize}
+\item Event Head of the Sports Chapter of the Annual Fest of Indian Statistical Institute, Integration '19.
+\end{itemize}
+\section{Extra Curricular Activities}
+\begin{itemize}
+\item Winner of Intra-College Volleyball tournament for three consecutive years. Runner up in Inter-College Volleyball tournament.
+\item Indian Statistical Institute Sports Day Medalist in events: Twice Bronze Medalist in Long Jump, Bronze Medalist in $400$m race, Gold Medalist in $400$m race, twice Gold Medalist in $4 \times 100$m relay.
+\item Ranked in the top 10 of Inter-College Chess Competition
+\end{itemize}
+\newpage
+\section{Coursework}
+{\large \textbf{Biostatistics:}}
+\begin{multicols}{2}
+{
+\begin{itemize}
+    \item Epidemiology for statisticians with \textbf{SAS}
+    \item Clinical Trials with \textbf{SAS}
+    \item Survival Analysis with \textbf{SAS}
+   
+\end{itemize}
+}
+\end{multicols}
+{\large \textbf{Probability :}}
+\begin{multicols}{2}
+{
+\begin{itemize}
+   \item Bayesian Statistics and Computation
+    \item Measure Theoretic Probability
+    \item Martingale Theory
+    \item Probability Theory $1,2,3$
+    \item Advanced Functional Analysis
+    \item Functional Analysis
+    \item Brownian Motion and Diffusions
+    \item Weak Convergence and Empirical Processes
+    \item Theory of Random Graphs
+    \item Stochastic Processes
+    \item Introduction to Markov Chains
+\end{itemize}
+}
+\end{multicols}
+{\large \textbf{Mathematics :}}
+\begin{multicols}{2}
+{
+\begin{itemize}
+    \item General Topology
+    \item Metric Topology and Complex Analysis
+    \item Number Theory
+    \item Analysis 1,2,3
+    \item Linear Algebra 1,2
+    \item Elements of Algebraic Structures
+    \item Discrete Mathematics
+    \item Optimization Techniques
+\end{itemize}
+}
+\end{multicols}
+
+{\large \textbf{Theoretical Statistics :}}
+\begin{multicols}{2}
+{
+\begin{itemize}
+    \item Statistical Inference 1
+    \item Large Sample Statistical Methods
+    \item Nonparametric and Sequential Methods
+    \item Parametric inference
+    \item Statistical Methods 1,2,3,4
+\end{itemize}
+}
+\end{multicols}
+
+{\large \textbf{Applied Statistics :}}
+\begin{multicols}{2}
+{
+\begin{itemize}
+   \item Spatial Statistics
+    \item Longitudinal Analysis
+    \item Statistical Computing 1
+    \item Time Series Analysis
+    \item Signal and Image Processing
+    \item Multivariate Analysis
+    \item Regression Techniques
+    \item Categorical Data Analysis
+    \item Resampling Techniques
+    \item Design of Experiments
+    \item Linear Statistical Models
+    \item Sample Surveys
+    \item Statistical Quality Control \& Operations \\ Research
+    \item Economic \& Official Statistics and Demography
+\end{itemize}
+}
+\end{multicols}
+
+{\large \textbf{Computer Science :}}
+\begin{multicols}{2}
+{
+\begin{itemize}
+\item Data Science with Python
+    \item Design \& Analysis of Algorithms
+    \item Numerical Analysis
+    \item Introduction to Programming and \\ Data Structures
+\end{itemize}
+}
+\end{multicols} 
+
+\section{References}
+\begin{itemize}
+   \item Dr. Debojyoti Sinha, Professor of Statistics at Florida State University, dsinha@fsu.edu
+    \item Dr Mridul Nandi, Assistant Professor, Applied Statistics Unit, ISI, mridul.nandi@gmail.com,  +91 33 2575-2815 
+    \item Dr Sourabh Bhattacharya,  Assistant Professor, Interdisciplinary Statistics Unit, ISI, bhsourabh@gmail.com,  +91 33 25752803
+    \item Dr Rajat Hazra,  Associate Professor, Theoretical Statistics and Mathematics Unit, ISI,\\ rajatmaths@gmail.com,   +913325753408
+    
+    
+\end{itemize}
+
+
+
+%\section{Work Experience}
+%
+%{PricewaterhouseCoopers}
+%\\~\\
+%{Google Summer Of Code}
+%\\
+
+
+%\section{Interest \& Hobbies}
+%\begin{itemize}
+%
+%
+%\item Solving Puzzles \& Speed Cubing : 
+%\end{itemize}
+%\end{flushleft}
+
+\setlength{\columnwidth}{\textwidth}
+\addtolength{\columnwidth}{-\columnsep}
+\setlength{\columnwidth}{.5\columnwidth}
+
+\setlength{\hintscolumnwidth}{0.175\columnwidth}
+\setlength{\separatorcolumnwidth}{0.025\columnwidth}
+%
+\renewcommand*{\recomputecvbodylengths}{%
+  % body lengths
+  \setlength{\maincolumnwidth}{\columnwidth-\leftskip-\rightskip-\separatorcolumnwidth-\hintscolumnwidth}%
+  \setlength{\listitemcolumnwidth}{\maincolumnwidth-\listitemsymbolwidth}%
+  \setlength{\doubleitemcolumnwidth}{\maincolumnwidth-\hintscolumnwidth-\separatorcolumnwidth-\separatorcolumnwidth}%
+  \setlength{\doubleitemcolumnwidth}{0.5\doubleitemcolumnwidth}%
+  \setlength{\listdoubleitemcolumnwidth}{\maincolumnwidth-\listitemsymbolwidth-\separatorcolumnwidth-\listitemsymbolwidth}%
+  \setlength{\listdoubleitemcolumnwidth}{0.5\listdoubleitemcolumnwidth}%
+  % regular lengths
+  \setlength{\parskip}{0pt}}
+
+
+
+
+
+
+\end{document}
+
+
+

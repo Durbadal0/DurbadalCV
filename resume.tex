@@ -1,0 +1,129 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+% personal data
+\name{Durbadal}{Ghosh}
+\phone[mobile]{+1 850 328 8379}
+\email{reevu7@gmail.com}
+\social[linkedin]{www.linkedin.com/in/durbadal-ghosh-1a7a27143}
+\social[github]{Durbadal0}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{08/2020--Present}{Ph.D. in Biostatistics}{Florida State University}{}{GPA: 3.9/4.0}{}
+\cventry{08/2018--05/2020}{M.Stat. (Master of Statistics)}{Indian Statistical Institute}{}{}{}
+\cventry{08/2014--05/2018}{B.Stat. (Bachelor of Statistics)}{Indian Statistical Institute}{}{}{}
+
+\section{Professional Experience}
+\cventry{05/2024--08/2024}{Statistical Consultant}{American Kennel Club (AKC)}{}{}{
+\begin{itemize}
+\item Conducted statistical analysis on dog breed versatility for an AKC research study
+\item Applied Bayesian Additive Regression Trees (BART) to analyze relationships between success in different canine activities and versatility indices
+\item Analyzed data from 133 dog breeds across seven performance categories to determine which activities predict high versatility
+\item Identified Obedience/Rally performance as the strongest predictor of overall breed versatility
+\item Developed methodology for measuring degrees of association between performance metrics and versatility
+\end{itemize}}
+
+\cventry{05/2024--08/2024}{QTL Analysis Researcher}{University of Tennessee Health Science Center}{}{}{
+\begin{itemize}
+\item Developed BigRiverQTL.jl, a Julia package for quantitative trait locus (QTL) analysis
+\item Created functions for calculating kinship matrices using various methods and optimized data structures
+\item Implemented LOCO (Leave One Chromosome Out) scans using QTL packages like BulkLMM and FlxQTL
+\item Worked on extending FlxQTL with Bayesian methodology for improved multivariate trait analysis
+\item Established test procedures using Julia's 'test' package for BigRiverQTL package registration
+\end{itemize}}
+
+\cventry{12/2020--12/2022}{Research Assistant}{Florida State University, College of Medicine}{}{}{
+\begin{itemize}
+\item Developed a Bayesian survival model for spatial clustered data using SBART (Soft Bayesian Additive Regression Trees)
+\item Discovered factors contributing to racial disparities in breast cancer patients in Florida
+\item Collaborated with a team led by the Director of the Center for Medicine and Public Health
+\end{itemize}}
+
+\cventry{05/2023--08/2023}{Biostatistics Intern}{Sanofi}{}{}{
+\begin{itemize}
+\item Specialized in historical data borrowing methodologies for clinical trials
+\item Implemented Bayesian statistical approaches to leverage historical control data in ongoing trials
+\item Developed statistical models to reduce sample size requirements and improve trial efficiency
+\item Created comprehensive analysis reports evaluating the validity of borrowed data
+\item Collaborated with clinical research teams to integrate findings into trial designs
+\end{itemize}}
+
+\cventry{05/2022--08/2022}{Statistical Consultant}{ESA South Inc.}{}{}{
+\begin{itemize}
+\item Provided statistical expertise for emergency services contractor working with the federal government
+\item Conducted comprehensive statistical analysis for disaster relief project following Hurricane Irma
+\item Evaluated data from over 4,000 temporary roof installations using multiple statistical methods
+\item Demonstrated sampling bias and measurement error through hypothesis testing and density estimation
+\item Prepared detailed statistical reports and expert testimony for contract appeals (ASBCA 62242, 62243, 63222)
+\end{itemize}}
+
+\cventry{08/2021--Present}{Member, Global Health Collaboration Project}{World Health Organization}{}{}{
+\begin{itemize}
+\item Serve as a biostatistician in an international collaboration
+\item Work with multidisciplinary teams including medical doctors and engineers
+\end{itemize}}
+
+\cventry{05/2019--08/2019}{Data Science Intern}{MBB LABS}{}{}{
+\begin{itemize}
+\item Built algorithms to detect fraud in real-time systems
+\item Implemented machine learning methods for pattern detection
+\end{itemize}}
+
+\section{Teaching Experience}
+\cventry{01/2024--05/2024}{Solo Instructor}{Introduction to Applied Statistics (STA2122)}{Florida State University}{}{}
+\cventry{08/2023--12/2023}{Solo Instructor}{Fundamental Business Statistics (STA2023)}{Florida State University}{}{}
+\cventry{05/2023--08/2023}{Solo Instructor}{Introduction to Applied Statistics (STA2122)}{Florida State University}{}{}
+\cventry{01/2023--05/2023}{Solo Instructor}{Statistics for Biology (STA2171)}{Florida State University}{}{}
+\cventry{05/2022--08/2022}{Solo Instructor}{Statistics through Example (STA1013)}{Florida State University}{}{}
+\cventry{01/2022--05/2022}{Solo Instructor}{Introduction to Applied Statistics (STA2122)}{Florida State University}{}{}
+
+\section{Publications \& Projects}
+\cvitem{2024}{"Analysis of spatially clustered survival data with unobserved covariates using SBART" - Under review at Biometrics}
+\cvitem{2024}{Estimating Causal Effects in Spatially Clustered Survival Data Using BART (ongoing)}
+\cvitem{2024}{BigRiverQTL.jl - Statistical Toolbox for QTL Analysis (Julia, registered August 2024)}
+
+\section{Awards \& Honors}
+\cvitem{2025}{Health Policy Statistics Section Student Paper Competition Winner - American Statistical Association}
+\cvitem{2025}{Nominated for Korwar Award (Best Student Researcher) - FSU Statistics}
+\cvitem{2023}{RL Anderson Graduate Student Poster Presentation Award - SRCOS (2nd place)}
+\cvitem{2023}{Outstanding Research Presentation Award - GSN, NISS (2nd place)}
+\cvitem{2023}{Boyd Harshburger Travel Award - SRCOS}
+\cvitem{2023}{Nominated for Korwar Award (Best Student Researcher) - FSU Statistics}
+\cvitem{2023}{Travel Award for Paper Presentation - Florida chapter of ASA}
+\cvitem{2023}{Travel Award from COGS, FSU for poster presentation at SRCOS}
+\cvitem{2022}{First Place - FSU Data Science Competition (Kaggle)}
+\cvitem{2023}{Fifth Place - FSU Data Science Competition (Kaggle)}
+\cvitem{2014}{Jagadis Bose Senior National Science Talent Search Scholar (2014-2020)}
+\cvitem{2014}{Selected in top 30 of the Chennai Mathematical Institute Entrance Exam amongst 10,000 candidates}
+
+\section{Technical Skills}
+\cvitem{Statistical Software}{SAS, R \& Rcpp, WinBUGS, Stan, nimble, Julia}
+\cvitem{Programming}{Python, C \& C++}
+\cvitem{Tools \& Methods}{LaTeX, R Markdown, Git/GitHub, Excel}
+\cvitem{Statistical Methods}{Bayesian Statistics, Causal Inference, Machine Learning, Monte Carlo methods, Mixed Effects Models, BART}
+\cvitem{Clinical Trial Experience}{Survival Analysis, Longitudinal Analysis, Study Design}
+
+\section{Selected Presentations}
+\cvitem{2025}{ENAR Spring Meeting}
+\cvitem{2024}{Joint Statistical Meeting}
+\cvitem{2024}{Theory and Foundations of Statistics in the Era of Big Data Conference (Poster)}
+\cvitem{2024}{ASA Florida Chapter}
+\cvitem{2023}{ASA Florida Chapter}
+\cvitem{2023}{NISS-GSN 3rd Annual Graduate Student Research Conference}
+\cvitem{2023}{SRCOS Summer Research Conference (Poster)}
+\cvitem{2023}{Yongyuan and Anna Li Presentations, FSU}
+
+\end{document}
